@@ -101,9 +101,6 @@ public class ProviderConfiguration implements Persistable {
         if (TextUtils.isEmpty(jwks_uri)) {
             throw new IllegalArgumentException("jwks_uri is missing");
         }
-        if (TextUtils.isEmpty(registration_endpoint)) {
-            throw new IllegalArgumentException("registration_endpoint is missing");
-        }
         if (TextUtils.isEmpty(revocation_endpoint)) {
             throw new IllegalArgumentException("revocation_endpoint is missing");
         }
